@@ -49,19 +49,148 @@ main {
     justify-content: center;
 }
 
+span {
+    color: var(--color-fith-color);
+}
+
 /* CONTAINER */
 
 .container {
     background: var(--color-fourth-color);
-    width: 50rem;
-    height: 50rem;
+    width: 35rem;
+    height: 35rem;
     border-radius: var(--border-radius);
 }
 
+/* CONTAINER TITLE */
+
 .container h3 {
     font-family: var(--font-family-main);
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 35px;
-    margin-left: 45px;
+    margin-left: 25px;
     color: var(--color-sixth-color);
+}
+
+/* FNAME AND LNAME SECTION */
+
+.form-contact form {
+    margin-top: 25px; 
+    height: 40rem;
+}
+
+.form-contact .f-name-l-name {
+    display: flex;
+    flex-direction: row;
+}
+
+.f-name-l-name .l-name {
+    margin-left: .1rem; /* left sapce of last name input */
+}
+
+.f-name-l-name 
+.email-adress {
+    display: flex;
+    flex-direction: column; /* Change l'axe principal de la flexbox à vertical */
+    gap: 1rem; /* Ajoute de l'espace entre les éléments */
+}
+
+.f-name {
+    margin-left: 25px;
+}
+
+.f-name, .l-name {
+    display: flex;
+    flex-direction: column; /* Assure que les labels et les inputs sont alignés verticalement */
+}
+
+label {
+    margin-bottom: 0.5rem; /* Ajoute de l'espace sous les labels */
+    font-family: var(--font-family-main);
+}
+
+input {
+    padding: 0.5rem;
+    border: 1px solid var(--color-fith-color);
+    border-radius: 4px;
+    width: 15rem;
+    margin-bottom: 1.2rem;
+}
+
+/* EMAIL ADDRESS - SECTION */
+
+.email-adress {
+    margin-left: 25px;
+}
+
+.email-adress input {
+    width: 31rem; 
+}
+
+/* QUERY TYPE SECTION */
+
+.query-type {
+    display: flex; 
+    flex-direction: row;
+}
+
+.enquery {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column; /* Change l'axe principal de la flexbox à vertical */
+    gap: .1rem; /* Ajoute de l'espace entre les éléments */
+} 
+
+.request {
+    margin-left: 25px; 
+    display: flex;
+    flex-direction: column; /* Change l'axe principal de la flexbox à vertical */
+    gap: .1rem; /* Ajoute de l'espace entre les éléments */
+}
+
+/* rend l'element transparent */
+
+.transparent-label {
+    opacity: 0;
+}
+
+/* TEXTEAREA SECTION */
+
+.message {
+    display: flex;
+    flex-direction: column; /* Change l'axe principal de la flexbox à vertical */
+    gap: .1rem; /* Ajoute de l'espace entre les éléments */
+}
+
+.message label {
+    margin-left: 25px;
+}
+
+.message textarea {
+    width: 31rem;
+    height: 6rem;
+    padding: .5rem;
+    margin-left: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--color-fith-color);
+}
+
+.custom-checkbox input {
+    border: 1px solid var(--color-fith-color);
+}
+
+/* BUTTON SECTION */
+.button {
+    margin-top: 1rem;
+}
+
+.button button {
+    width: 31rem;
+    height: 2.5em;
+    margin-left: 25px;
+    background: var(--color-secondary-color);
+    color: var(--color-fourth-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

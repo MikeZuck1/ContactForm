@@ -1,41 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
 
     <!-- LINK CSS -->
-    <link rel="stylesheet" href="/styles/styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
     <!-- MAIN SECTION -->
 
     <main>
+      <!-- MAIN CONTAINER -->
 
-        <!-- MAIN CONTAINER -->
+      <div class="container">
+        <h3>Contact Us</h3>
 
-        <div class="container">
-            <h3>Contact Us</h3>
+        <!-- FORM CONTAINER -->
 
-            <!-- FORM CONTAINER -->
+        <div class="form-contact">
+          <!-- FORM CONTAINER -->
 
-            <div class="form-contact">
+          <form action="">
+            <!-- Form elements will go here -->
+            <div class="f-name-l-name">
+              <div class="f-name">
+                <label for="name">First name <span>*</span></label>
+                <input type="text" id="first-name" name="name" />
+              </div>
 
-                <!-- FORM CONTAINER -->
-
-                <form action="">
-
-                    <!-- Form elements will go here -->
-                     
-
-                </form>
+              <div class="l-name">
+                <label for="name">First name <span>*</span></label>
+                <input type="text" id="last-name" name="name" />
+              </div>
 
             </div>
 
-        </div>
+            <div class="email-adress">
+                <label for="name">Email address <span>*</span></label>
+                <input type="text" id="email" name="name" />
+            </div>
 
+            <div class="query-type">
+                <!-- GENERAL ENQUIRY SECTION -->
+                <div class="enquery">
+                    <label for="name">Query Type <span>*</span></label>
+                    <input type="radio" id="enquiry" name="name" /> 
+                </div>
+
+                <!-- GENERAL ENQUIRY SECTION -->
+                <div class="request">
+                    <label for="name" class="transparent-label">Query Type <span>*</span></label>
+                    <input type="radio" id="request" name="name" />
+                </div>
+            </div>
+
+            <!-- TEXTEAREA MESSAGE SECTION -->
+
+            <div class="message">
+                <label for="message">Message <span>*</span></label> 
+                <textarea name="user_message" id="message"></textarea>
+            </div>
+
+            <!-- CONSENT TEXT SECTION -->
+            <div class="consent">
+                <label class="custom-checkbox">
+                    <input type="checkbox" id="square-checkbox" name="square-checkbox">
+                    <span class="checkmark"></span>
+                    I consent to being contacted by the team <span>*</span>
+                </label>
+            </div>
+
+            <!-- BUTTON SECTION -->
+
+            <div class="button">
+                <button type="submit">Submit</button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>

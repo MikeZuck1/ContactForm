@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
 
+    <!-- LINK FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="/contact-form-main/assets/images/file-signature-solid.svg"
+      type="image/x-icon"
+    />
+
     <!-- LINK CSS -->
     <link rel="stylesheet" href="/styles/styles.css" />
+
+    <!-- CDN FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/abb7a84c40.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- MAIN SECTION -->
@@ -34,52 +47,55 @@
                 <label for="name">First name <span>*</span></label>
                 <input type="text" id="last-name" name="name" />
               </div>
-
             </div>
 
             <div class="email-adress">
-                <label for="name">Email address <span>*</span></label>
-                <input type="text" id="email" name="name" />
+              <label for="name">Email address <span>*</span></label>
+              <input type="text" id="email" name="name" />
             </div>
 
             <div class="query-type">
-                <!-- GENERAL ENQUIRY SECTION -->
-                <div class="enquery">
-                    <label for="name">Query Type <span>*</span></label>
-                    <input type="radio" id="enquiry" name="name" /> 
-                </div>
+              <!-- GENERAL ENQUIRY SECTION -->
+              <div class="enquery">
+                <label for="name">Query Type <span>*</span></label>
+                <input type="radio" id="enquiry" name="name" />
+              </div>
 
-                <!-- GENERAL ENQUIRY SECTION -->
-                <div class="request">
-                    <label for="name" class="transparent-label">Query Type <span>*</span></label>
-                    <input type="radio" id="request" name="name" />
-                </div>
+              <!-- GENERAL ENQUIRY SECTION -->
+              <div class="request">
+                <label for="name" class="transparent-label"
+                  >Query Type <span>*</span></label
+                >
+                <input type="radio" id="request" name="name" />
+              </div>
             </div>
 
             <!-- TEXTEAREA MESSAGE SECTION -->
 
             <div class="message">
-                <label for="message">Message <span>*</span></label> 
-                <textarea name="user_message" id="message"></textarea>
+              <label for="message">Message <span>*</span></label>
+              <textarea name="user_message" id="message"></textarea>
             </div>
 
             <!-- CONSENT TEXT SECTION -->
             <div class="consent">
-                <label class="custom-checkbox">
-                    <input type="checkbox" id="square-checkbox" name="square-checkbox">
-                    <span class="checkmark"></span>
-                    I consent to being contacted by the team <span>*</span>
-                </label>
+              <label class="custom-checkbox">
+                <input
+                  type="checkbox"
+                  id="square-checkbox"
+                  name="square-checkbox"
+                />
+                <span class="checkmark"></span>
+                I consent to being contacted by the team <span>*</span>
+              </label>
             </div>
 
             <!-- BUTTON SECTION -->
 
             <div class="button">
-                <button type="submit">Submit</button>
+              <button type="submit">Submit</button>
             </div>
-
           </form>
-
         </div>
       </div>
     </main>

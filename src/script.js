@@ -22,7 +22,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         alert('Please enter the email address');
     } else if (message.value == "") {
         alert('Please enter the message'); 
-    } else if (checkbox.checked == "") {
+    } else if (checkbox.checked == "") { 
         alert('Please enter our consent');
     } else if (enquiryInput.checked == "") {
         alert ('Please selecction one of the optional Query Type');

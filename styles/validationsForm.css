@@ -1,0 +1,37 @@
+:root {
+    /* ### Primary */
+    --color-main-color: hsl(148, 38%, 91%); /* Green 200 (lighter) */
+    --color-secondary-color: hsl(69, 82%, 27%); /* Green 600 (medium) */
+    --color-third-color: hsl(0, 66%, 54%); /* Red */
+  
+    /* ### Neutral */
+    --color-fourth-color: hsl(0, 0%, 100%); /* White */
+    --color-fith-color: hsl(186, 15%, 59%); /* Grey 500 (medium) */
+    --color-sixth-color: hsl(187, 24%, 22%); /* Grey 900 (darker) */
+  
+    /* ## Typography */
+    --font-family-main: "Karla", sans-serif; /* Font family */
+    --font-size-base: 16px; /* Base font size */
+    --font-optical-sizing: auto; /* Normal font weight */
+    --font-weight-normal: 400; /* Normal font weight */
+    --font-weight-bold: 700; /* Bold font weight */
+    --font-style: normal; /* Standard font style */
+  
+    /* ### Spacing */
+    --spacing-small: 8px; 
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+  
+    /* ### Others */ 
+    --border-radius: 10px; 
+}
+
+/* FORM VALIDATION SECTION */
+
+input:valid { /* WHEN THE INPUT IS VALID */
+    border: 1px solid var(--color-sixth-color);
+}
+
+input:invalid { /* WHEN THE INPUT IS INVALID */
+    border: 1px solid var(--color-third-color);
+}

@@ -14,12 +14,13 @@
 
     <!-- LINK CSS -->
     <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/validationsForm.css" />
 
     <!-- CDN FONT AWESOME -->
     <script
       src="https://kit.fontawesome.com/abb7a84c40.js"
       crossorigin="anonymous"
-    ></script> 
+    ></script>
   </head>
   <body>
     <!-- MAIN SECTION -->
@@ -40,25 +41,31 @@
             <div class="f-name-l-name">
               <div class="f-name">
                 <label for="name">First name <span>*</span></label>
-                <input type="text" id="first-name" name="name" />
+                <input
+                  type="text"
+                  id="first-name"
+                  name="name"
+                  required
+                  pattern="banane|cerise" 
+                />
               </div>
 
               <div class="l-name">
                 <label for="name">First name <span>*</span></label>
-                <input type="text" id="last-name" name="name" />
+                <input type="text" id="last-name" name="name" required />
               </div>
             </div>
 
             <div class="email-adress">
               <label for="name">Email address <span>*</span></label>
-              <input type="text" id="email" name="name" />
+              <input type="text" id="email" name="name" required />
             </div>
 
             <div class="query-type">
               <!-- GENERAL ENQUIRY SECTION -->
               <div class="enquery">
                 <label for="name">Query Type <span>*</span></label>
-                <input type="radio" id="enquiry" name="name" />
+                <input type="radio" id="enquiry" name="name" required />
               </div>
 
               <!-- GENERAL ENQUIRY SECTION -->
@@ -66,7 +73,7 @@
                 <label for="name" class="transparent-label"
                   >Query Type <span>*</span></label
                 >
-                <input type="radio" id="request" name="name" />
+                <input type="radio" id="request" name="name" required />
               </div>
             </div>
 
@@ -74,7 +81,14 @@
 
             <div class="message">
               <label for="message">Message <span>*</span></label>
-              <textarea name="user_message" id="message"></textarea>
+              <textarea 
+                name="user_message" 
+                id="message" 
+                required
+                minlength="10"
+                maxlength="50"
+                >
+              </textarea>
             </div>
 
             <!-- CONSENT TEXT SECTION -->
@@ -84,6 +98,7 @@
                   type="checkbox"
                   id="square-checkbox"
                   name="square-checkbox"
+                  required
                 />
                 <span class="checkmark"></span>
                 I consent to being contacted by the team <span>*</span>
@@ -106,6 +121,5 @@
 
     <!-- LINK TO JS FILE -->
     <script src="/src/script.js"></script>
-    
   </body>
 </html>

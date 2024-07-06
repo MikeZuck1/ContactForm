@@ -7,7 +7,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     let emailAddress = document.getElementById('email');
     let message = document.getElementById('message');
     let checkbox = document.getElementById('square-checkbox');
-    let enquiryInput = document.getElementById('enquiry')
+    let enquiryInput = document.getElementById('enquiry');
     let requestInput = document.getElementById('request');
 
     // THIS CONDITION ANALYZE IF ALL FIELDS ARE EMPTY OR NOT. 
@@ -38,3 +38,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         password.value = ""; 
     }
 });
+
+div.classList.remove('foo');
+div.classList.add("anotherClass");

@@ -19,7 +19,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     } else if (lastName.value == "") {
         alert('Please enter the last name !');
     } else if (emailAddress.value == "") {
-        alert('Please enter the email address');
+        alert('Please enter the email address'); 
     } else if (message.value == "") {
         alert('Please enter the message'); 
     } else if (checkbox.checked == "") { 

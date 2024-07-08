@@ -42,12 +42,24 @@
             <div class="f-name-l-name">
               <div class="f-name">
                 <label for="name">First name <span>*</span></label>
-                <input type="text" id="first-name" name="name" required />
+                <input
+                  type="text"
+                  id="first-name"
+                  name="name"
+                  autocomplete="given-name"
+                  required
+                />
               </div>
 
               <div class="l-name">
                 <label for="name">First name <span>*</span></label>
-                <input type="text" id="last-name" name="name" required />
+                <input
+                  type="text"
+                  id="last-name"
+                  name="name"
+                  autocomplete="family-name"
+                  required
+                />
               </div>
             </div>
 
@@ -84,8 +96,10 @@
                 required
                 minlength="10"
                 maxlength="50"
+                autocomplete="off"
               >
               </textarea>
+              <!-- The attribut "autocomplete" is on "off" because we don't want the autocomplete of value for this input.  -->
             </div>
 
             <!-- CONSENT TEXT SECTION -->

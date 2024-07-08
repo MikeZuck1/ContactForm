@@ -1,10 +1,10 @@
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Empêche l'envoi réel du fonrmulaire.
-    document.getElementById('submitMessage').style.display = 'block'; 
+    // document.getElementById('submitMessage').style.display = 'block'; 
 
     let firstName = document.getElementById('first-name');
     let lastName = document.getElementById('last-name');
-    let emailAddress = document.getElementById('email');
+    let emailAddress = document.getElementById('email'); 
     let message = document.getElementById('message');
     let checkbox = document.getElementById('square-checkbox');
     let enquiryInput = document.getElementById('enquiry');
@@ -20,7 +20,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         alert('Please enter the last name !');
     } else if (emailAddress.value == "") {
         alert('Please enter the email address'); 
-    } else if (message.value == "") {
+    } else if (message.value == "") { 
         alert('Please enter the message'); 
     } else if (checkbox.checked == "") { 
         alert('Please enter our consent');
@@ -38,6 +38,3 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         password.value = ""; 
     }
 });
-
-div.classList.remove('foo');
-div.classList.add("anotherClass");

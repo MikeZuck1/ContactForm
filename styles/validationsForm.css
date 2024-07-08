@@ -23,15 +23,15 @@
     --spacing-large: 24px;
   
     /* ### Others */ 
-    --border-radius: 10px; 
+    --border-radius: 10px;
 }
 
 /* FORM VALIDATION SECTION */
 
-input:valid { /* WHEN THE INPUT IS VALID */
-    border: 1px solid var(--color-sixth-color);
-}
+/*  input:valid { /* WHEN THE INPUT IS VALID */
+    /* border: 1px solid var(--color-sixth-color);
+} */
 
-input:invalid { /* WHEN THE INPUT IS INVALID */
-    border: 1px solid var(--color-third-color);
-}
+/* input:invalid { /* WHEN THE INPUT IS INVALID 
+    border: 1px solid var(--color-third-color); 
+}  */
